@@ -1,0 +1,534 @@
+body{
+	font-family: Arial;
+	background-color:#abce79;
+	margin: 0px;
+}
+
+.torol {
+	clear:both;
+}
+
+#AlsoMargo13 {
+	margin-bottom:13px;
+}
+
+.Keret{
+	width: 980px;	
+	margin: auto;	
+	padding-top: 17px;
+}
+
+.Hird {
+	width:728px;
+	height:90px;
+	padding-left:126px;
+	padding-bottom:2px;
+}
+
+.Fejlec {
+	width:980px;
+	height:162px;
+	position:relative;
+	background:url("fejlec.gif") left top no-repeat;
+}
+
+.Fejlec .Stat {
+	padding-left:22px;
+	padding-top:10px;
+	color:#fdf4e6;
+	line-height:25px;
+	font-size:11px;
+}
+
+.Fejlec .txtLogo {
+	position:absolute;
+	top:118px;
+	left:127px;
+	color:#feda83;
+	font-style:italic;
+	font-size:11px;
+}
+
+.Fejlec .Stat span {
+	color:#feda83;
+	font-weight:bold;
+}
+
+.Fejlec .Zaszlok {
+	position:absolute;
+	left:890px;
+	top:13px;
+}
+
+.Fejlec .share_icons {
+	position:absolute;
+	left:765px;
+	top:13px;
+	width: 50px;
+}
+
+.Fejlec .share_icons a {
+	margin: 0 3px 0 3px;
+}
+
+.Fejlec .Kepek {
+	position:absolute;
+	top:49px;
+	left:315px;
+}
+
+.Fejlec .Kepek .Foto {
+	float:left;
+	/*background:url("fejlec_kiskep_keret.png") top left no-repeat;*/
+	width:137px;
+	height:97px;
+	padding-top:4px;
+	padding-left:6px;
+}
+
+.Fejlec .Kepek .Foto a img
+{
+	border: 2px solid white;
+}
+
+.Fejlec .Bejelentkezes {
+	position:absolute;
+	left:770px;
+	top:49px;
+}
+
+.Fejlec .Bejelentkezes #Hatter1 {
+	background:url("belepes.png") left center no-repeat;
+	border:0;
+	width:176px;
+	height:14px;
+	padding:10px 5px 10px 5px;
+}
+
+.Fejlec .Bejelentkezes #Hatter2 {
+	background:url("belepes2.png") left center no-repeat;
+	border:0;
+	width:133px;
+	height:14px;
+	padding:10px 5px 10px 5px;
+	float:left;
+}
+
+.Fejlec .Bejelentkezes #Hatter3 {
+	background:url("belepes2.png") left center no-repeat;
+	border:0;
+	width:133px;
+	height:14px;
+	padding:10px 5px 10px 5px;
+	float:left;
+}
+
+.Fejlec .Bejelentkezes #BelepesOk {
+	border:0;
+	width:43px;
+	height:30px;
+	padding-top:2px;
+	float:left;
+}
+
+.Fejlec .Bejelentkezes a {
+	color:#feda83;
+	font-size:12px;
+	text-decoration:none;
+	display:block;
+	line-height:26px;
+	padding-left:4px;
+}
+
+.Menu {
+	width:960px;
+	background: url(fomenu_bg.png) top left repeat-y;
+	line-height:34px;
+	padding:0 10px 0 10px;
+}
+
+.Menu div#Fomenu {
+	width:936px;
+	padding:0 1px 0 1px;
+	margin:0;
+	display:table;
+}
+
+.Menu div#Fomenu a.FomenuID {
+	text-decoration:none;
+	font-size:14px;
+	color:#fdf4e6;
+	font-weight:bold;
+	line-height:34px;
+	display:block;
+	float:left;
+	cursor:pointer;
+}
+
+.Menu a.FomenuID div.Aktiv {
+	background:url("fomenu_bg_kozep.png") repeat-x;
+	float:left;
+	color:#205400;	
+}
+
+.Menu a.FomenuID img {
+	float:left;
+}
+
+.Menu a.FomenuID div.Passziv {
+	padding:0 11px 0 11px;
+}
+
+.Menu .Almenu {
+	background-color:#b9ddbe;
+	width:954px;
+	height:29px;
+	padding:0 3px 0 3px;
+	position:relative;
+	overflow:hidden;
+}
+
+.Menu .Almenu ul {
+	width:936px;
+	height:29px;
+	line-height:26px;
+	padding:0;
+	margin:0;
+	list-style:none;
+	display:none;
+}
+
+.Menu .Almenu ul li {
+	margin:0;
+	float:left;
+	padding:0 9px 0 9px;
+}
+
+.Menu .Almenu .NR {
+	color:#8f763b;
+	font-weight:bold;
+	font-size:12px;
+	line-height:26px;
+	padding-top:2px;
+}
+
+.Menu .Almenu a {
+	color:#205400;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:12px;
+}
+
+.Menu .Almenu a:hover {
+	text-decoration:underline;
+}
+
+.Torzs {
+	width:980px;
+	background: url(hatter.gif) repeat-y;
+	padding: 0 10px 0 10px;
+}
+
+.TorzsB {
+	width:960px;
+	background: url(bottom.gif) left bottom repeat-x;
+}
+
+.Torzs .FelsoDoboz {
+	width:960px;
+	height:40px;
+	padding-top:11px;
+	/*background: url(felso_doboz.gif) top center no-repeat;*/
+	position:relative;
+}
+
+.Torzs .Bal {
+	width:694px;
+	padding:0 11px 0 8px;
+	float:left;
+	overflow: hidden;
+}
+
+.Torzs .Bal .CimsorSotet {
+	width:679px;
+	height:40px;
+	background: url("cimsor_sotet.gif") left top no-repeat;
+	color:#205400;
+	line-height:39px;
+	font-size:18px;
+	padding-left:15px;
+}
+
+.Torzs .Bal .CimsorVilagos {
+	width:679px;
+	height:40px;
+	background: url("cimsor_vilagos.gif") left top no-repeat;
+	color:#205400;
+	line-height:39px;
+	font-size:18px;
+	padding-left:15px;
+}
+
+.Torzs .Bal .Doboz {
+	line-height:17px;
+	text-align:left;
+	width:664px;
+	background-color:#faf8f3;
+	padding:24px 14px 24px 14px;
+	border:1px solid #ebe0d1;
+}
+
+.Torzs .Bal .SotetFej {
+	line-height:38px;
+	height:38px;
+	background:url("jobb_hatter_galeriak.gif") left top repeat-x;
+}
+
+.Torzs .Bal .Doboz .Text {
+	line-height:17px;
+	font-size:13px;
+	color:#333;
+	margin:0;
+	padding:0;
+}
+
+.Torzs .Bal .Doboz a.h1 {
+	font-size:22px;
+	line-height:24px;
+}
+
+.Torzs .Jobb {
+	width:232px;
+	padding-right:8px;
+	float:left;
+	font-size:12px;
+	overflow:hidden;
+}
+
+.Torzs .Jobb .Fej {
+	width:225px;
+	height:40px;
+	background: url(jobb-fej.gif) no-repeat;
+	line-height:40px;
+	padding-left:15px;
+	font-size:18px;
+	color:#205400;
+}
+
+.Torzs .Jobb .Doboz {
+	width:223px;
+	background-color:#fdfdfd;
+	padding:11px 7px 11px 8px;
+	border:1px solid #ebe0d1;
+	text-align:center;
+	display:table;
+}
+
+.Torzs .Jobb .Doboz .Tartalom {
+	text-align:left;
+	width:199px;
+	background-color:#fff;
+	color:#333;
+	border:1px solid #ebe0d1;
+	padding:7px 11px 7px 11px;
+	line-height:16px;
+	clear:both;
+}
+
+.Torzs .Jobb .Doboz .Tartalom {
+	float:left;
+}
+
+.Torzs .Jobb #AlsoMargo {
+	margin-bottom:9px;
+}
+
+.Torzs .Jobb .Doboz .Szunet {
+	line-height:10px;
+	font-size:8px;
+	float:left;
+	width:223px;
+}
+
+.Torzs .Doboz a { 
+	color:#205400;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.Torzs .Jobb .Doboz a.Tovabb {
+	float:right;
+}
+
+.Torzs .Jobb .Doboz a.Text {
+	font-size:14px;
+}
+
+#hirekFoto img {
+	border:2px solid #ccc;
+}
+
+.Torzs .Jobb .Doboz .Tartalom .Foto {
+	width:96px;
+	border:2px solid #ccc;
+}
+
+.szFoto {
+	border:2px solid #ccc;
+	margin:5px;
+}
+
+.Torzs .Jobb .Doboz .Tartalom .Text {
+	width:91px;
+	padding-left:8px;
+	float:left;
+	line-height:14px;
+	font-size:12px;
+}
+
+.Torzs span.szurke {
+	font-size:11px;
+	color:#999;
+}
+
+.Torzs .Jobb .Doboz a.Galeria {
+	float:left;
+}
+
+.Torzs .Jobb .Osszes {
+	clear:both;
+	width:240px;
+	height:41px;
+	background:url("jobb_hatter_osszes.gif") left top no-repeat;
+	position:relative;	
+}
+
+.Torzs .Jobb .Osszes a {
+	position:absolute;
+	top:5px;
+	left:150px;
+	width:82px;
+	background:url("gomb.gif") left top no-repeat;
+	line-height:26px;
+	height:28px;
+	font-size:12px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	text-decoration:none;
+}
+
+.Torzs .Jobb .Osszes a span {
+	font-size:16px;
+}
+
+.Torzs .Jobb .GaleriakFej {
+	line-height:38px;
+	font-size:18px;
+	color:#205400;
+	width:225px;
+	height:38px;
+	background:url("jobb_hatter_galeriak.gif") left top repeat-x;
+	padding-left:15px;
+}
+
+.Torzs .AlsoDoboz {
+	clear:both;
+	width:960px;
+	height:10px;
+	background: url(also_doboz.gif) repeat-x;
+	position:relative;
+	line-height:10px;
+}
+
+.Labresz {
+	width:980px;
+	height:154px;
+	position:relative;
+	background:url("labresz.gif") left top no-repeat;
+}
+
+.Labresz .Alsomenu span {
+	color:#fff;
+}
+
+.Labresz .Alsomenu {
+	position:absolute;
+	top:40px;
+	left:222px;
+	font-size:12px;
+	line-height:19px;
+	color:#3d9d00;
+}
+
+.Labresz .Alsomenu a {
+	text-decoration:none;
+	color:#fdf4e6;
+}
+
+.Labresz .Alsomenu a:hover {
+	text-decoration:underline;
+}
+
+.Labresz a#lablecgds
+{
+	display: block;
+	border:0;
+	width: 90px;
+	height: 50px;
+	position:absolute;
+	top:35px;
+	left:865px;	
+}
+
+#szavazasForm label
+{
+	line-height: 1em;
+}
+
+#szavazasForm dd
+{
+	padding: 5px;
+}
+.KeresoBox{
+	margin: auto;
+}
+.KeresoBox .Button{
+	background-color: #4e0000;
+	color: white;
+	font-weight: bold;
+	border: 1px black solid;	
+}
+.KeresoBox .Text{
+	width: 300px;
+	border: 1px #d3c6b7 solid;
+	font-size: 12px;
+}
+.KeresoBox td{
+	padding: 2px;
+}
+
+.ListaSzabalyzat {
+	clear:both;
+	border:1px solid #e8dccd;
+	background:#f4eee3 url("torzs_bg.gif") repeat-x;
+	padding:10px 10px 13px 13px;
+	font-size:12px;
+	color:#393939;
+}
+
+/*.CimsorVilagos img.buttonImg, .CimsorSotet img.buttonImg
+{
+	//margin-bottom: 2px !important;
+}*/
+
+
+.CimsorVilagos img.buttonImg, .CimsorSotet img.buttonImg
+{
+	//vertical-align: top !important;
+}
+
+div#hozzaszolaslista div.Lapozo
+{
+	width: 627px !important;
+}
