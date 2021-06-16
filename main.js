@@ -142,10 +142,12 @@ const displayData=(d)=>{
     return `
         ${d.datum.value}
         ${getOptionsTextByValue('#fajId',d.fajId.value)}
-        ${d.peldany.value}pd${kor!=='' ? ', '+kor : ''}${nem!=='' ? ', '+nem : ''}
+        ${d.peldany.value}pd ${kor} ${nem}
         ${getOptionsTextByValue('#telepules', d.telepules.value)}${ter ? ', '+ter : ''}
-        ${d.megfigyelo.value}${d.megjegyzes.value ? '\n'+d.megjegyzes.value : '' }${d.foto.value ? '\n'+d.foto.value : '' }
-        Koordináta: ${d.coord.value}
+        ${d.megfigyelo.value}
+        ${d.megjegyzes.value}
+        ${d.foto.value}
+        ${d.coord.value}
     `
 }
 
@@ -172,4 +174,23 @@ const submitButtonClick=(e)=>{
     const dd=displayData(Feltoltes);
     alert(dd);
     setTimeout(()=>clearData(), 0);
+}
+
+const help=()=>{
+    alert(`
+    +   a marker ikonnal a képernyő közepére
+        ugratható a marker (nem kell cincálni)
+    +   a markerre kattintással lehet a beállítani
+        a helyet
+    +   a települést és esetleg a városrészt
+        automatikusan beállítja
+    +   feltöltés során a marker nem mozdul el
+    +   LatLon/LonLat tizedes koordináta beírható, másolható
+    +   enterre a marker a megadott koordinátára ugrik
+    +   a városrész (ha van) a terület előtagja lesz, 
+        így nem kell adatbázist módosítani
+    -   Mint kiderült, a felhasznált reverse geocoder
+        a https://nominatim.openstreetmap.org/
+        nem elég pontos...
+    `)
 }
