@@ -235,5 +235,5 @@ const bird = (n)=>{
         console.warn('Something went wrong.', err);
     });
     
-    /// Almatorta kellene
+    /// Almatortát kéne enni
 }
