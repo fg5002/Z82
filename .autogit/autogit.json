@@ -1,0 +1,6 @@
+{
+  "updateInterval": 120,
+  "defaultMessage": "Automatic commit 55",
+  "logging": true,
+  "silent": true
+}
