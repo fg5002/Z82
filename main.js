@@ -73,10 +73,23 @@ const coordInputHandler=(coord)=>{
 }
 
 const coordStringValidator=(t)=>{
-    const pattern=/^(\d{2})[\.,](\d+)\D+(\d{2})[\.,](\d+)$/
-    const result = t.match(pattern) ? t.replace(pattern,'$1.$2,$3.$4') : null;
-    console.log(result);
-    return result;
+    try{
+        const pattern=/^(\d{2})[\.,](\d+)\D+(\d{2})[\.;,](\d+)$/
+        const result = t.match(pattern) ? t.replace(pattern,'$1.$2,$3.$4') : null;
+        if(result){
+            console.log(result);
+            return result;
+        }else{
+            throw new ReferenceError();
+        }
+    }
+    catch(error){
+        if(error instanceof ReferenceError){
+            alert('Invalid coordinate format');
+        }else{
+            alert(error.message);
+        }
+    }
 }
 
 const formatCoord = (cor)=>{
@@ -191,6 +204,37 @@ const help=()=>{
         így nem kell adatbázist módosítani
     -   Mint kiderült, a felhasznált reverse geocoder
         a https://nominatim.openstreetmap.org/
-        nem elég pontos...
+        nem mindig pontos...
     `)
+}
+
+
+const bird = (n)=>{
+    const url=`http://birding.hu/megfigyeles/adatlap/682555`;
+
+    const fetchHeaders = new Headers({ 
+        'Content-Type': 'text/html'
+    }) 
+
+    const fetchOptions = { 
+        method: 'GET', 
+        headers: fetchHeaders, 
+        mode: 'no-cors', 
+        //cache: 'no-cache' 
+    } 
+
+    fetch(url, fetchOptions)
+    .then((response)=> response.text())
+    .then((html)=> {
+        console.log(html);
+        /*const parser = new DOMParser();
+        const doc = parser.parseFromString(html, 'text/html');
+        const lat = doc.querySelector('#gMapLat').innerHTML;
+        console.log(lat);*/
+    
+    }).catch(function (err) {
+        // There was an error
+        console.warn('Something went wrong.', err);
+    });
+
 }
