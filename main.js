@@ -229,8 +229,7 @@ const bird = (n)=>{
         console.log(html);
         /*const parser = new DOMParser();
         const doc = parser.parseFromString(html, 'text/html');
-        const lat = doc.querySelector('#gMapLat').innerHTML;
-        console.log(lat);*/
+        const lat = doc.querySelector('#gMapLat').innerHTML;*/
     
     }).catch(function (err) {
         console.warn('Something went wrong.', err);
