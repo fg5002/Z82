@@ -233,9 +233,7 @@ const bird = (n)=>{
         console.log(lat);*/
     
     }).catch(function (err) {
-        // There was an error
         console.warn('Something went wrong.', err);
     });
     
-    //xxx
 }
