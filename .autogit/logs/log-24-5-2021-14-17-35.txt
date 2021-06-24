@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Jun 24 2021 14:17:35 GMT+0200 (közép-európai nyári idő)
+------------------------------------------------------
+
+Modified files:
+* .gitignore
+
+
+Created files:
+* .autogit/autogit.json
+* .autogit/logs/log-24-5-2021-14-5-0.txt
+
+
+Deleted files:
+
+
+Renamed files:
